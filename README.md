@@ -1,4 +1,4 @@
-This is a valentine cod which displays your favourite memories with your partner.
+This is a valentine code which displays your favourite memories with your partner.
 
 
 
