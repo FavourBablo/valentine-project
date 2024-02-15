@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\HP\Documents\valentine-proj\css\styles.css">
+     <title>Our Love Story</title>
+</head>
+<body>
+    <header>
+        <h1>Memories With You</h1>
+    </header>
+
+    <title>Video Page with Overlay</title>
+    <style>
+        .video-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .video-container {
+            position: relative;
+            width: calc(33.33% - 10px); /* Adjust the width and gap as needed */
+            margin-bottom: 10px;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and transparency */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s ease; /* Add a smooth transition */
+        }
+
+        .video-container:hover .video-overlay {
+            opacity: 1; /* Show the overlay on hover */
+        }
+
+        .text {
+            color: white;
+            font-size: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-grid">
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\1.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text">Angel</div>
+            </div>
+        </div>
+
+        <!-- Add more video containers as needed -->
+        
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\2.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text">My Heart</div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\3.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text">Darling</div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\4.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text">Baby</div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted  autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\5.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text">Princess</div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\1.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text"> The one for me</div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\7.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text">My love</div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\8.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text">My Joy</div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\9.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text">My Pride</div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\1.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text">My Wife</div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\2.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text">My Help</div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\3.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text">My Comfort</div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\4.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text">God Sent</div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted  autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\5.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text">Beautiful</div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\1.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text">Amazing</div>
+            </div>
+        </div>
+
+        <section class="quotes">
+            <h2>A Message To My Love</h2>
+            <p1>As the world paints itself in hues of love, my heart beats to the melody of our connection. This Valentine's Day, I find myself wrapped in the warmth of your love, a love that's as boundless as the universe and as tender as a whisper.
+
+                In every shared smile and every shared silence, I discover a love deeper than words can express. Your presence is my greatest gift, and your love, my most cherished treasure.
+                
+                Together, we've woven a tapestry of beautiful moments, and with each passing day, our journey becomes more enchanting. You are the melody in my heart, the sparkle in my eyes, and the answer to every prayer whispered into the night.</p1>
+            <!-- Add your favorite love quotes here -->
+            <ul id="quote-list"></ul>
+        </section>
+
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\2.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text">Caring</div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\3.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text"> Understanding</div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\4.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text">Unique</div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\5.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text">My Everything</div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\7.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text">My World</div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\8.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text"> My Existence</div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted  autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\9.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text">Key To My Heart</div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\1.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text">Breathe Of Fresh Air</div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\2.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text"> My Soulmate</div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\3.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text">My Inspiration</div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\4.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text">My Rhythm</div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\5.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text">My Smile</div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\7.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text">My Happiness</div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\8.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text">My Purpose</div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video class="demo cursor" controls loop muted autoplay>
+                <source src="C:\Users\HP\Documents\valentine-proj\media\9.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay" onclick="togglePlayPause(this)">
+                <div class="text">My Muse</div>
+            </div>
+        </div>
+         </div>
+         <script>
+        function togglePlayPause(overlay) {
+            var video = overlay.previousElementSibling;
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+    </script>
+
+    <section class="quotes">
+        <h2>A Message To My Love</h2>
+            <p1>On this special day, I want to express my gratitude for the love you've showered upon me, and to promise that my love for you will endure,
+                 growing stronger with each sunrise. You are my confidant, my partner in laughter, and the love of my life.
+                <a href="C:\Users\HP\Documents\valentine-proj\html\ending-blooming-flower.html"><button>Click Here</button></a>for one more surprise.
+              </p1>
+        <!-- Add your favorite love quotes here -->
+        <ul id="quote-list"></ul>
+    </section>
+
+    <title>Auto Play Audio</title>
+</head>
+<body onclick="playAudio()">
+
+<audio id="myAudio" controls autoplay>
+    <source src="C:\Users\HP\Documents\valentine-proj\media\John-Legend-All-Of-Me-(Gospeljingle.com).mp3">
+</audio>
+
+<script>
+    function playAudio() {
+        var audio = document.getElementById("myAudio");
+        audio.play();
+        // Remove the onclick attribute to prevent repeated playback on subsequent clicks
+        document.body.removeAttribute("onclick");
+    }
+</script>
+    <footer>
+        <p>&copy; Bablo Technology 2024</p>
+    </footer>
+
+    <script src="C:\Users\HP\Documents\valentine-proj\java_script\script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.envelope {
+    position: relative;
+    width: 70vw;
+    height: 70vh;
+    background-color: #ecf0f1; /* Envelope color */
+    border: 8px solid #3498db; /* Blue border */
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.flap {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+button {
+    margin: 20px;
+    background-color: #3498db; /* Blue */
+    color: white;
+    padding: 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker Blue */
+}
+
+.message {
+    flex: 2;
+    position: relative;
+    text-align: center;
+    color: #3498db; /* Blue text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#nextBtn {
+    margin-top: 20px;
+    background-color: #ffd700; /* Gold */
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#nextBtn:hover {
+    background-color: #e5b706; /* Darker Gold */
+}

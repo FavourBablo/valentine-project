@@ -1,0 +1,63 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+header {
+    background-color: #FFFFFF;
+    color: #112d83;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
+section {
+    margin: 20px;
+}
+
+h2 {
+    color: #142e7a;
+    font-family: 'Tangerine', cursive;
+    font-style: italic;
+    font-weight: bold;
+}
+
+p1 {
+    color: #172d6e;
+    font-family: 'Tangerine', cursive;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 70x; /* Adjust the size as needed */
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Overlay for video */
+.container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%; /* Set to the same width as the video */
+    height: 100%; /* Set to the same height as the video */
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    transition: 0.5s ease;
+    text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay */
+.container:hover .overlay {
+    opacity: 1;
+}
+
